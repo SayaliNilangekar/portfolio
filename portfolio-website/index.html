@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayali's Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #322843;
+        color: white;
+        font-family: "Source Sans 3", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        /* background-color: #2c233b; */
+        background-color: #322843;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        font-family: "Source Code Pro", monospace;
+        font-weight: 300;
+        padding-right: 50px;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 35px;
+      }
+
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover{
+        text-decoration: none;
+        color: #52B4BA;
+        font-size: 1.01rem;
+      }
+
+      .left {
+        padding-top: 15px;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .firstSection > div{
+        width: 30%
+      }
+
+      .leftSection {
+        /* width: 60%; */
+        padding-left: 200px;
+        margin: 200px 200px;
+        /* background-color: aliceblue; */
+      }
+
+      .line1{
+        font-family: "Source Code Pro", monospace;
+        font-weight: 300;
+        font-size: 18px;
+      }
+
+      .name{
+        font-family: "Source Sans 3", sans-serif;
+        /* font-weight: 300; */
+        font-size: 70px;
+        color: #52B4BA;
+        margin-left: -3px;
+      }
+
+      .intro{
+        font-weight: 200;
+        font-size: 22px;
+      }
+
+      .rightSection {
+        width: 80%;
+        margin-right: 200px;
+        margin-top: 150px;
+        /* background-color: aliceblue; */
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <img src="snLogoSmT.png" />
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Experience</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Skills</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+            <div class="line1">Hello World! I am</div>
+            <div class="name">
+                <span id="name"></span>
+            </div>
+            <br>
+            <div class="intro">
+                <p>
+                    Presently a Software Engineering student, I am set to graduate in May 2024 and am looking for full time opportunities. 
+                </p>
+                <br>
+                <br>
+                <p>
+                    With a passion for programming ignited by years of hands-on experience, I've journeyed through 3 years of real-world projects, honing my skills and embracing the thrill of turning lines of code into innovative solutions.                 
+                </p>
+                <br>
+                <br>
+                <p>
+                    Join me as I showcase my endeavors and share my love for the art of software development!
+                </p>
+            </div>
+        </div>
+        <div class="rightSection">
+            <img src="girl_colorScheme.png"/>
+        </div>
+      </section>
+
+      <section class="secondSection">
+        <h1>Work Experience</h1>
+      </section>
+    </main>
+  </body>
+  
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#name', {
+      strings: ['Sayali Nilangekar.'],
+      typeSpeed: 50,
+    });
+  </script>
+
+</html>
